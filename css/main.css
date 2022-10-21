@@ -200,13 +200,21 @@ body {
   flex-direction: column;
   margin: 2em 0;
 }
-.aboutus__img {
+.aboutus__box__img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 1em;
+}
+.aboutus__box__img--right {
   max-width: 100%;
   margin-bottom: 1em;
 }
-.aboutus__img--right {
-  max-width: 100%;
-  margin-bottom: 1em;
+.aboutus__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 .aboutus__title {
   color: #D2266F;
@@ -216,14 +224,22 @@ body {
 }
 .aboutus__text {
   font-size: 2rem;
+  margin-bottom: 2em;
   padding-bottom: 2.5em;
 }
 
-@media (max-height: 725px) {
-  .header .header__arrow {
-    display: none;
-  }
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
 }
+.footer .color {
+  color: #a612c7;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 @media (min-width: 992px) {
   .section-padding {
     padding: 2em 2em;
